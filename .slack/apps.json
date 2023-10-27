@@ -1,0 +1,11 @@
+{
+  "apps": {
+    "T021VSASW4R": {
+      "app_id": "A062QKSR6PM",
+      "IsDev": false,
+      "team_domain": "ragingrolls",
+      "team_id": "T021VSASW4R"
+    }
+  },
+  "default": "ragingrolls"
+}

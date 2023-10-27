@@ -66,10 +66,10 @@ export default SlackFunction(
     if (!npcObject.ok) {
       const error = `Failed to retrieve a row in datastore: ${npcObject.error}`;
       // send an ephemeral message
-      await Schema.slack.functions.SendDm({
-        user_id: inputs.user_id,
-        message: error,
-      });
+      // await Schema.slack.functions.SendDm({
+      //   user_id: inputs.user_id,
+      //   message: error,
+      // });
       return { error };
     }
 

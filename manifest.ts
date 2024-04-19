@@ -2,6 +2,7 @@ import { Manifest } from "deno-slack-sdk/mod.ts";
 import NpcObjectDatastore from "./datastores/npc_datastore.ts";
 import { GetnpclistDefinition } from "./functions/getnpcs.ts";
 import { NewnpcFunctionDefinition } from "./functions/newnpc_function.ts";
+import { RolldDefinition } from "./functions/rolld.ts";
 // import { NpcmessageFunctionDefinition } from "./functions/npcmessage_function.ts";
 import NewnpcWorkflow from "./workflows/newnpc_workflow.ts";
 // import { NpcType } from "./types/npcs.ts";
@@ -20,9 +21,10 @@ export default Manifest({
   functions: [
     NewnpcFunctionDefinition,
     GetnpclistDefinition,
+    RolldDefinition,
   ],
   workflows: [NpcmessageWorkflow, NewnpcWorkflow],
-  outgoingDomains: [],
+  outgoingDomains: ["rpg-dice-roller-api.djpeacher.com"],
   datastores: [NpcObjectDatastore],
   types: [],
   botScopes: [
